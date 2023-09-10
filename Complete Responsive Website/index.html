@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS Link -->
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* navbar section */
+        .navbar {
+            display: flex;
+            position: absolute;
+            left: 80px;
+            top: 25px;
+        }
+
+        .navbar div {
+            display: flex;
+        }
+
+        .navbar div span {
+            color: rgb(245, 71, 72);
+        }
+
+        .navbar ul {
+            display: flex;
+            position: relative;
+            left: 700px;
+        }
+
+        .navbar li {
+            list-style: none;
+            padding: 2px 12px;
+            font-weight: bold;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: grey;
+            font-size: 14px;
+        }
+
+        #signup {
+            color: rgb(251, 179, 179);
+        }
+
+        /* content section */
+        .content {
+            position: relative;
+            top: 150px;
+            left: 110px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin: 13px;
+            position: relative;
+            right: 13px;
+            color: rgb(46, 46, 46);
+        }
+
+        .content p {
+            color: rgb(103, 103, 103);
+            margin: 5px;
+        }
+
+        .content span {
+            color: rgb(245, 71, 72);
+        }
+
+        .trynow {
+            display: flex;
+            position: relative;
+        }
+
+        .trynow img {
+            position: relative;
+            left: 130px;
+            top: 10px;
+        }
+
+        /* Content buttons*/
+        #faster {
+            color: red;
+            background-color: rgb(250, 233, 233);
+            padding: 9px 20px;
+            border-radius: 18px;
+            border: 2px solid rgb(250, 233, 233);
+            cursor: pointer;
+        }
+
+        #trynow {
+            color: white;
+            background-color: rgb(248, 96, 97);
+            border: 2px solid rgb(248, 96, 97);
+            position: absolute;
+            top: 40px;
+            left: 6px;
+            padding: 18px 35px;
+            font-size: 18px;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+
+        /* image code section */
+        #person {
+            position: absolute;
+            left: 710px;
+            bottom: 27px;
+            width: 47%;
+        }
+
+        /* First Section */
+        /* Heading Code */
+        #first-sec {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 700px;
+            background-color: rgb(252, 242, 242);
+        }
+
+        .works {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            top: 100px;
+        }
+
+        .works h1 {
+            margin: 4px;
+            font-size: 35px;
+            color: rgb(46, 46, 46);
+
+        }
+
+        .works h4 {
+            margin-bottom: 4px;
+            color: rgb(245, 71, 72);
+            font-size: 15px;
+
+        }
+
+        /* Card Section */
+        .cards {
+            display: flex;
+            position: relative;
+            top: 130px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items {
+            /* border: 2px solid red; */
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 270px;
+            width: 250px;
+            border-radius: 12px;
+            background-color: white;
+        }
+
+        /* item1 section */
+        #item1 h1 {
+            position: relative;
+            bottom: 48px;
+        }
+
+        #item1 p {
+            position: relative;
+            bottom: 48px;
+        }
+
+        .items h1 {
+            font-size: 20px;
+        }
+
+        .items p {
+            font-size: 20px;
+            color: rgb(131, 131, 131);
+            margin: 4px;
+            font-size: 12px;
+        }
+
+        #lock {
+            position: relative;
+            top: 60px;
+        }
+
+        #hand {
+            position: relative;
+            right: 10px;
+            bottom: 18px;
+        }
+
+        /* item 2 section */
+        #item2 {
+            box-shadow: 17px 17px rgb(249, 104, 104);
+
+        }
+
+        #subtract2 {
+            position: relative;
+            left: 25px;
+        }
+
+        #subtract1 {
+            position: relative;
+            right: 30px;
+            bottom: 25px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Navbar code -->
+                <nav class="navbar">
+                    <div>
+                        <img src="Images/plane.png" alt="no img" id="plane">
+                        <h3>Collab<span>Talk.ai</span></h3>
+                    </div>
+                    <ul>
+                        <li><a target="_blank" id="signup" href="/index.html">Sign Up</a></li>
+                        <li><a target="_blank" href="/about.html">About</a></li>
+                        <li><a target="_blank" href="/contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!-- Content code -->
+                <div class="content">
+                    <button id="faster">Faster and Better</button>
+                    <h1>Dialauge</h1>
+                    <h1>Postcasts</h1>
+                    <h1>Generated <span>by AI</span></h1>
+                    <p>Generate conversational podcasts using your</p>
+                    <p>fovarite medium article or simply by giving a topic.</p>
+                    <div class="trynow">
+                        <button id="trynow">Try Now</button>
+                        <img id="orderprocess" src="Images/OrderProcess.png" alt="no img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <!-- image code -->
+                <img id="person" src="Images/person.png" alt="no img">
+            </div>
+        </div>
+        <section id="first-sec">
+            <div class="row">
+                <div class="col">
+                    <!-- Heading code -->
+                    <div class="works">
+                        <h4>How it works</h4>
+                        <h1>One Click Conversation</h1>
+                        <h1>Podcasts</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <!-- card 1 -->
+                        <div id="item1" class="items">
+                            <img id="lock" src="Images/lock.png" alt="no img">
+                            <img src="Images/hand.png" alt="no img" id="hand">
+                            <h1>Upload URL</h1>
+                            <p>Don't have your script? no worries.</p>
+                            <p>Give us a medium article URL or</p>
+                            <p>simply a topic name?</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <!-- card 2 -->
+                    <div id="item2" class="items">
+                        <img id="subtract2" src="Images/subtract2.png" alt="no img">
+                        <img src="Images/subtract1.png" alt="no img" id="subtract1">
+                        <h1>Add Speakers</h1>
+                        <p>Add details about the speakers,</p>
+                        <p>their gender and personality.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <!-- card 3 -->
+                    <div id="item3" class="items">
+                        <img src="Images/car.png" alt="no img" id="car">
+                        <h1>Download</h1>
+                        <p>Generate your podcast and</p>
+                        <p>download it.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+<!-- Javascript link -->
+
+</html>
